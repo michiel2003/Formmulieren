@@ -14,14 +14,27 @@
                 <label for="email">E-Mail:</label><br>
                 <input type="text" id="email" name="email" placeholder="E-Mail Adress"><br><br>
                 <label for="bday">Date Of Birth:</label><br>
-                <input type="date" id="bday" name="bday"><br><br>
+                <input type="number" id="bdayday" name="bdayday" placeholder="day"><input type="number" id="bdaymonth" name="bdaymonth" placeholder="month"><input type="number" id="bdayyear" name="bdayyear" placeholder="year"><br><br>
                 <label for="appointment">Date Of Appointment:</labe><br>
-                <input type="date" id="appointment" name="appointment"><br><br>
+                    <input type="number" id="appday" name="appday" placeholder="day"><input type="number" id="appmonth" name="appmonth" placeholder="month"><input type="number" id="appyear" name="bdayyear" placeholder="year"><br><br>
                 <label for="hour">hour of Appointment</label><br>
                 <input type="number" id="hour" name="hour" placeholder="Hour Of Appointment"><br><br>
-                <input type="submit" value="SUBMIT" onclick="test();">
-                <input type="reset" value="RESET">
+                <input type="reset" value="RESET"><br>
             </form>
+        </div>
+        <input type="button" value="SUBMIT" onclick="test();"><br><br>
+        <div id="confirm">
+            <strong>CONFIRM:</strong><br>
+            <strong>name:</strong><br>
+            <p id = "name"></p><br>
+            <strong>e-mail:</strong><br>
+            <p id="e-mail"></p><br>
+            <strong>Date Of Birth:</strong><br>
+            <p id="bdayfull"></p><br>
+            <strong>Date Of Appointment:</strong><br>
+            <p id="appdate"></p><br>
+            <strong>hour:</strong><br>
+            <p id="apphourhour"></p>
         </div>
     </body>
 </html>
